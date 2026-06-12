@@ -4,7 +4,7 @@
 
 * Rows: 255,347
 * Columns: 18
-* Memory Usage: 24,83 MB
+* Memory Usage: 35,1 MB
 
 ---
 
@@ -76,16 +76,15 @@ No duplicate records were detected.
 
 LoanID contains unique identifiers for all records.
 
----
-
-## Initial Assessment
-
-The dataset appears clean and ready for exploratory data analysis.
-
-Key findings:
-
-* No missing values
-* No duplicate records
-* Data types are appropriate
-* Numerical variables fall within expected ranges
-* Categorical variables have low cardinality and are suitable for encoding
+|                |   count |          mean |          std |     min |      25% |      50% |      75% |      max |
+|:---------------|--------:|--------------:|-------------:|--------:|---------:|---------:|---------:|---------:|
+| Age            | 255347  | 43.4983       | 14.9903      | 18      | 31       | 43       | 56       | 69       |
+| Income         | 255347  | 82499.3046    | 38963.0137   | 15000   | 48825.5  | 82466    | 116219   | 149999   |
+| LoanAmount     | 255347  | 127578.8655   | 70840.7061   | 5000    | 66156    | 127556   | 188985   | 249999   |
+| CreditScore    | 255347  | 574.2643      | 158.9039     | 300     | 437      | 574      | 712      | 849      |
+| MonthsEmployed | 255347  | 59.5420       | 34.6434      | 0       | 30       | 60       | 90       | 119      |
+| NumCreditLines | 255347  | 2.5010        | 1.1170       | 1       | 2        | 2        | 3        | 4        |
+| InterestRate   | 255347  | 13.4928       | 6.6364       | 2       | 7.77     | 13.46    | 19.25    | 25       |
+| LoanTerm       | 255347  | 36.0259       | 16.9693      | 12      | 24       | 36       | 48       | 60       |
+| DTIRatio       | 255347  | 0.5002        | 0.2309       | 0.1     | 0.3      | 0.5      | 0.7      | 0.9      |
+| Default        | 255347  | 0.1161        | 0.3204       | 0       | 0        | 0        | 0        | 1        |
