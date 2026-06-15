@@ -76,6 +76,33 @@ No duplicate records were detected.
 
 LoanID contains unique identifiers for all records.
 
+## No Nulls values in dataset
+
+|                |   0 |
+|:---------------|----:|
+| LoanID         |   0 |
+| Age            |   0 |
+| HasCoSigner    |   0 |
+| LoanPurpose    |   0 |
+| HasDependents  |   0 |
+| HasMortgage    |   0 |
+| MaritalStatus  |   0 |
+| EmploymentType |   0 |
+| Education      |   0 |
+| DTIRatio       |   0 |
+| LoanTerm       |   0 |
+| InterestRate   |   0 |
+| NumCreditLines |   0 |
+| MonthsEmployed |   0 |
+| CreditScore    |   0 |
+| LoanAmount     |   0 |
+| Income         |   0 |
+| Default        |   0 |
+
+## Dataset
+
+The dataset contains 255,347 loan records with borrower demographics, financial information, and loan characteristics. Variables include age, income, loan amount, credit score, employment length, interest rate, and loan term.
+
 |                |   count |          mean |          std |     min |      25% |      50% |      75% |      max |
 |:---------------|--------:|--------------:|-------------:|--------:|---------:|---------:|---------:|---------:|
 | Age            | 255347  | 43.4983       | 14.9903      | 18      | 31       | 43       | 56       | 69       |
