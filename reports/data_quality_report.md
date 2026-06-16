@@ -31,6 +31,8 @@
 | HasCoSigner    | object  |
 | Default        | int64   |
 
+Binary categorical variables (HasMortgage, HasDependents, HasCoSigner) were converted from string values ("Yes"/"No") to integer format (0/1). Text values cannot be used in calculations like averages or comparisons between groups.
+
 ---
 
 ## Missing Values
@@ -40,8 +42,6 @@ No missing values were detected in any column.
 ---
 
 ## Duplicate Records
-
-Duplicate rows found: 0
 
 No duplicate records were detected.
 
@@ -58,8 +58,6 @@ No duplicate records were detected.
 | Interest Rate | 2%–25%          |
 | DTI Ratio     | 0.10–0.90       |
 
-
-
 ---
 
 ## Categorical Columns
@@ -74,7 +72,6 @@ No duplicate records were detected.
 | LoanPurpose    | 5             |
 | HasCoSigner    | 2             |
 
-LoanID contains unique identifiers for all records.
 
 ## No Nulls values in dataset
 
@@ -115,3 +112,7 @@ The dataset contains 255,347 loan records with borrower demographics, financial 
 | LoanTerm       | 255347  | 36.0259       | 16.9693      | 12      | 24       | 36       | 48       | 60       |
 | DTIRatio       | 255347  | 0.5002        | 0.2309       | 0.1     | 0.3      | 0.5      | 0.7      | 0.9      |
 | Default        | 255347  | 0.1161        | 0.3204       | 0       | 0        | 0        | 0        | 1        |
+
+## 📊 Age, Loan & Credit Data Quality Validation
+
+No records were found with `Age < 18`, `LoanTerm = 0`, `CreditScore = 0 or > 850`, `Income < 0`, or `LoanAmount < 0`, indicating that all key variables passed data quality checks with no invalid or suspicious values detected.
