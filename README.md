@@ -46,7 +46,7 @@ Overall result:
 - No duplicates
 - No invalid or out-of-range records
 
-📄 Full Data Quality Report: ![Data Quality Report](reports/data_quality_report.md)
+📄 Full Data Quality Report: [Data Quality Report](reports/data_quality_report.md)
 
 ---
 
