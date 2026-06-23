@@ -60,7 +60,7 @@ The table below ranks variables by the strength of their relationship with defau
 
 ## Loan Amount Analysis
 
-![Loan Amount Distribution by Default Status](../visuals/loan_amount_boxplot.png)
+![Loan Amount Distribution by Default Status](../visuals/loan_amount_summary.png)
 
 - Borrowers who defaulted received larger loans on average ($144,515) than borrowers who repaid their loans ($125,354).
 - The median loan amount is also substantially higher among defaulted borrowers ($152,672 vs. $124,236).
@@ -109,15 +109,6 @@ The table below ranks variables by the strength of their relationship with defau
 
 ---
 
-## Default Rate by Income Deciles
-
-![Default Rate by Income Deciles](../visuals/default_rate_income.png)
-
-- Borrowers in the lowest income group have a default rate of ~22.5%, which is more than double compared to the highest income group (~8.8%).
-- Default risk steadily decreases as income increases, showing a consistent and stable trend across all deciles.
-
----
-
 ## Group Comparison: Repaid vs Defaulted Borrowers
 
 | Variable | Repaid | Defaulted | Difference (Defaulted - Repaid) |
@@ -139,3 +130,92 @@ they earn less but borrow more, which increases repayment pressure.
 - Income and employment stability also play a meaningful role, reinforcing earlier findings that financial capacity reduces risk.
 - Loan size appears less influential when compared to borrower profile and pricing factors.
 - Overall, default risk is not driven by a single dominant variable, but by a combination of borrower characteristics and loan terms.
+
+---
+
+## Loan Purpose Distribution
+
+![Loan Purpose Distribution](../visuals/loan_purpose_distribution.png)
+
+| Loan Purpose | Number of Loans |
+|--------------|----------------:|
+| Business | 51,298 |
+| Home | 51,286 |
+| Education | 51,005 |
+| Other | 50,914 |
+| Auto | 50,844 |
+
+- Loan distribution is highly balanced across all purposes (~50K each).
+- Business and Home loans are slightly more frequent, but the difference is minimal.
+- No strong concentration in any single loan category.
+
+---
+
+## Loan Volume by Purpose
+
+![Loan Volume by Purpose](../visuals/loan_volume_by_purpose.png)
+
+| Loan Purpose | Total Loan Volume |
+|--------------|------------------:|
+| Home | 6,545,241,527 |
+| Business | 6,522,120,439 |
+| Education | 6,510,575,194 |
+| Auto | 6,500,807,511 |
+| Other | 6,498,135,901 |
+
+- Loan volume is evenly distributed across all purposes (~6.5B each).
+- Home loans generate the highest total exposure.
+- Differences between categories are marginal (<1%).
+
+---
+
+## Default Rate by Loan Purpose
+
+![Default Rate by Loan Purpose](../visuals/default_rate_by_loan_purpose.png)
+
+| Loan Purpose | Default Rate (%) |
+|--------------|-----------------:|
+| Business | 12.33 |
+| Auto | 11.88 |
+| Education | 11.84 |
+| Other | 11.79 |
+| Home | 10.23 |
+
+- Business loans show the highest default risk (12.33%).
+- Home loans have the lowest default rate (10.23%).
+- Risk variation across purposes is moderate but consistent.
+
+---
+
+## Default Rate by Marital Status
+
+![Default Rate by Marital Status](../visuals/marital_status_default_rate.png)
+
+| Marital Status | Default Rate (%) |
+|----------------|-----------------:|
+| Divorced | 12.53 |
+| Single | 11.91 |
+| Married | 10.40 |
+
+- Divorced borrowers show the highest default rate.
+- Married borrowers are the most stable group.
+- Marital status shows a clear but moderate relationship with risk.
+
+---
+
+## Income Segment Analysis
+
+![Income Segment Default Rate](../visuals/income_segment_default_rate.png)
+
+| Income Segment | Borrowers | Avg Income | Avg Loan | Avg Credit Score | Default Rate (%) |
+|----------------|----------:|-----------:|---------:|-----------------:|-----------------:|
+| Low | 63,837 | 31,877.53 | 127,624.50 | 574.43 | 17.38 |
+| Medium | 63,837 | 65,653.29 | 127,713.95 | 574.35 | 10.54 |
+| High | 63,839 | 99,362.46 | 127,344.35 | 574.21 | 9.51 |
+| Very High | 63,834 | 133,105.79 | 127,632.67 | 574.07 | 9.02 |
+
+- Strong inverse relationship between income and default rate.
+- Low-income borrowers default almost 2x more than high-income borrowers.
+- Credit score remains relatively stable across income segments.
+
+---
