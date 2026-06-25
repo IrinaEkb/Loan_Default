@@ -51,7 +51,7 @@
 
 ### Profit vs Threshold Visualization
 
-![Profit vs Threshold](./visuals/profit_threshold.png)
+![Profit vs Threshold](/visuals/profit_threshold.png)
 
 Model performance varies depending on approval strictness:
 
@@ -73,7 +73,7 @@ Model performance varies depending on approval strictness:
 
 ### Confusion Matrix
 
-![Confusion Matrix](./visuals/confusion_matrix.png)
+![Confusion Matrix](/visuals/confusion_matrix.png)
 
 |                        | Predicted Good | Predicted Default |
 |------------------------|----------------|------------------|
