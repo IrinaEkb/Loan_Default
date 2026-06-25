@@ -49,6 +49,10 @@
 
 ## Threshold Analysis (Profit Optimization)
 
+### Profit vs Threshold Visualization
+
+![Profit vs Threshold](./visuals/profit_threshold.png)
+
 Model performance varies depending on approval strictness:
 
 | Threshold | Profit | Business Interpretation |
@@ -65,36 +69,73 @@ Model performance varies depending on approval strictness:
 
 ---
 
-## Model Performance at Threshold = 0.6
+## Model Performance at Threshold = 0.2
 
 ### Confusion Matrix
 
-![Confusion Matrix](visuals/confusion_matrix.png)
-
+![Confusion Matrix](./visuals/confusion_matrix.png)
 
 |                        | Predicted Good | Predicted Default |
 |------------------------|----------------|------------------|
-| Actually Good Clients  | 45,054 (correct approvals) | 85 (lost business) |
-| Actually Default Clients | 5,748 (missed risk) | 183 (correctly rejected) |
+| Good Clients           | 39,234 | 5,905 |
+| Default Clients        | 3,307 | 2,624 |
 
 ---
 
-### Classification Metrics
+### Interpretation
 
-| Metric | Good Clients (0) | Default Clients (1) | Meaning |
-|--------|------------------:|--------------------:|--------|
-| Precision | 0.89 | 0.68 | How accurate predictions are |
-| Recall | 1.00 | 0.03 | How many defaulters are detected |
-| F1-score | 0.94 | 0.06 | Overall balance of precision & recall |
+- 39,234 → safe loans correctly approved  
+- 5,905 → good clients rejected  
+- 3,307 → risky clients approved (credit risk)  
+- 2,624 → risky clients correctly rejected  
 
 ---
 
-### Overall Model Quality
+Total loans:
+39,234 + 5,905 + 3,307 + 2,624 = 51,070
 
-| Metric | Value | Meaning |
-|--------|------:|--------|
-| Accuracy | 0.8858 | 88.6% predictions are correct overall |
-| ROC-AUC | 0.751 | Moderate ability to separate good vs bad borrowers |
+Approved loans:
+39,234 + 3,307 = 42,541
+
+Approval rate:
+42,541 / 51,070 = 0.833 → ~83%
+
+Rejected loans:
+5,905 + 2,624 = 8,529
+
+Risk in approved portfolio:
+3,307 / 42,541 = 0.0778 → ~7.8%
+
+
+---
+
+### Metrics
+
+| Metric | Good Clients (0) | Default Clients (1) |
+|--------|------------------:|--------------------:|
+| Precision | 0.89 | 0.68 |
+| Recall | 1.00 | 0.03 |
+| F1-score | 0.94 | 0.06 |
+
+- Recall 0.03 → model detects only 3% of defaulters  
+- Precision 0.68 → when model flags risk, it is usually correct  
+
+---
+
+### Model Quality
+
+| Metric | Value |
+|--------|------:|
+| Accuracy | 0.8858 |
+| ROC-AUC | 0.751 |
+
+---
+
+### Comparison to previous portfolio
+
+- Earlier default rate ≈ 11.6% (higher natural risk in dataset)
+- Current model approved portfolio has ~7.8% risk exposure
+- Approval rate increased to ~83%, meaning more loans are issued while risk is c
 
 ---
 
