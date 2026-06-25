@@ -1,4 +1,4 @@
-## 03_model_preparation.ipynb — Model Results Summary 
+## Model Preparation Results Summary 
 
 ---
 
