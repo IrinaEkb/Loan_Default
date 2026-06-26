@@ -50,7 +50,7 @@ Overall result:
 - No duplicates
 - No invalid or out-of-range records
 
-📄 Full Data Quality Report: [Data Quality Report](reports/data_quality_report.md)
+📄 Full Data Quality Report: [Data Quality Report](reports/01_data_quality_report.md)
 
 ---
 
@@ -99,7 +99,7 @@ Main analyses included:
 
 ![Top Risk Factors](visuals/top_risk_factors.png)
 
-📄 Full EDA Report: [EDA Report](reports/eda_report.md)
+📄 Full EDA Report: [EDA Report](reports/02_eda_report.md)
 
 ---
 
@@ -145,6 +145,8 @@ The model was evaluated under multiple approval thresholds to understand the tra
 Lower approval thresholds generate higher portfolio profit by approving more borrowers, while stricter thresholds reduce both lending volume and profitability.
 
 Under the assumptions used in this analysis, the **0.2 threshold produced the highest simulated portfolio profit of approximately $166M**.
+
+Full Model Preparation Report: [Model_Preparation_Report](reports/03_model_preparation_report.md)
 
 ---
 
@@ -303,3 +305,5 @@ Overall, the analysis indicates that:
 * **Risk-adjusted loan sizing can significantly reduce expected credit losses while preserving lending efficiency.**
 
 Together, predictive modeling and risk-based lending policies provide a practical framework for improving both portfolio quality and financial performance.
+
+Full Loan Size Strategy: [Loan Size Strategy](reports/04_loan_size_strategy.md)
