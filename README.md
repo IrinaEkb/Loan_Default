@@ -1,4 +1,4 @@
-#  Loan Default Prediction Project
+#  Credit Risk Portfolio Optimization & Policy Simulation
 
 ## Project Goal
 
@@ -306,4 +306,82 @@ Overall, the analysis indicates that:
 
 Together, predictive modeling and risk-based lending policies provide a practical framework for improving both portfolio quality and financial performance.
 
-Full Loan Size Strategy: [Loan Size Strategy](reports/04_loan_size_strategy.md)
+Full Loan Size Strategy: [Loan Size Strategy](reports/04_loan_size_strategy_report.md)
+
+---
+
+# High-Risk Borrower Rejection Strategy (Policy Impact)
+
+## Business Objective
+
+This analysis evaluates whether rejecting a small group of extremely high-risk borrowers can improve portfolio quality and reduce expected credit losses while maintaining overall lending volume.
+
+## Business Problem
+
+Although the portfolio default rate is **11.61%**, a concentrated segment of borrowers exhibits significantly higher risk:
+
+- Credit Score < 400  
+- Income in bottom 25% of portfolio  
+- Debt-to-Income Ratio > 55%  
+
+The question is whether removing this segment improves portfolio performance without materially reducing lending activity.
+
+## Rejection Policy
+
+Borrowers are rejected only if all conditions are met:
+
+| Risk Factor | Threshold |
+|-------------|----------|
+| Credit Score | < 400 |
+| Income | Bottom 25% |
+| Debt-to-Income Ratio | > 55% |
+
+## Key Results
+
+| Metric | Value |
+|--------|------:|
+| Rejected Applications | 5,071 |
+| Lending Volume Removed | $645.6M |
+| Expected Loss Avoided | $159.7M |
+| Segment Default Rate | 20.19% |
+
+## Portfolio Impact
+
+| Metric | Before | After | Change |
+|--------|--------|-------|--------|
+| Portfolio Volume | $32.58B | $31.93B | -$645.6M |
+| Default Rate | 11.61% | 11.44% | -0.17 pp |
+| Expected Loss | $4.29B | $4.13B | -$159.7M |
+
+![Portfolio Policy Impact](./visuals/portfolio_policy_impact.png)
+
+## Business Interpretation
+
+The reduction in default rate is small because the rejected group is a small portion of the total portfolio.
+
+However, this segment contributes disproportionately to expected credit losses (~$160M).
+
+Expected loss reduction is more meaningful than small changes in default rate.
+
+## Risk–Return Trade-off
+
+This policy removes:
+
+- ~$646M in loan volume  
+- 5,071 applications  
+
+In exchange for:
+
+- ~$160M reduction in expected losses  
+
+## Recommendation
+
+A targeted rejection policy for borrowers with:
+
+- very low credit scores  
+- low income  
+- high debt-to-income ratio  
+
+is recommended as a complement to predictive modeling.
+
+Although default rate improvement is modest, expected loss reduction is material (~3.7%).
