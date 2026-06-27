@@ -353,7 +353,7 @@ Borrowers are rejected only if all conditions are met:
 | Default Rate | 11.61% | 11.44% | -0.17 pp |
 | Expected Loss | $4.29B | $4.13B | -$159.7M |
 
-![Portfolio Policy Impact](./visuals/portfolio_policy_impact.png)
+![Portfolio Policy Impact](/visuals/portfolio_policy_impact.png)
 
 ## Business Interpretation
 

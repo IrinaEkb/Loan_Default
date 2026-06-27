@@ -97,7 +97,7 @@ This indicates that the policy is focused on a concentrated pocket of elevated c
 | Expected Loss Reduction | $159,711,094 |
 | Reduction in Expected Portfolio Loss | 3.73% |
 
-![Portfolio Policy Impact](./visuals/portfolio_policy_impact.png)
+![Portfolio Policy Impact](/visuals/portfolio_policy_impact.png)
 
 ---
 
