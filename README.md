@@ -154,17 +154,7 @@ Full Model Preparation Report: [Model_Preparation_Report](reports/03_model_prepa
 
 ---
 
-# Loan Size Policy Analysis
-
-Although the predictive model improves borrower selection, an additional business question remained:
-
-> **Can portfolio losses be reduced further by adjusting loan amounts for high-risk borrowers rather than only changing approval decisions?**
-
-Before testing alternative lending policies, the portfolio structure was analyzed to determine which borrower characteristics drive default risk.
-
----
-
-## Credit Risk Strategies (Loan Sizing & Rejection Policies)
+# Credit Risk Strategies (Loan Sizing & Rejection Policies)
 
 ---
 
