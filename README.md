@@ -385,3 +385,5 @@ A targeted rejection policy for borrowers with:
 is recommended as a complement to predictive modeling.
 
 Although default rate improvement is modest, expected loss reduction is material (~3.7%).
+
+📄 Full Rejection Policy Report: [Rejection Policy Impact Report](reports/05_rejection_policy_report.md)
