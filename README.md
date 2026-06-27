@@ -1,22 +1,26 @@
-#  Credit Risk Portfolio Optimization & Policy Simulation
+# Credit Risk Portfolio Optimization & Policy Simulation
 
 ## Project Goal
 
-To analyze key factors influencing loan default risk and build a predictive model to identify high-risk borrowers.
+To analyze key factors influencing loan default risk and build a predictive model to identify high-risk borrowers, and to evaluate alternative credit risk management policies to improve portfolio performance.
+
+The project focuses on comparing different intervention strategies, including:
+- Risk-based loan sizing (adjusting loan amounts for high-risk borrower segments)
+- Targeted borrower rejection policies
 
 ---
 
 ## Business Question
 
-What is the potential financial impact of introducing loan size caps for low-income borrowers?
+What is the financial and risk impact of different credit policy interventions in a lending portfolio?
 
-Specifically:
+Specifically, this analysis evaluates:
 
-- How much larger are loans issued to defaulted borrowers?
-- How much loan exposure is concentrated in low-income segments?
-- How many dollars of high-risk lending could be avoided?
-- Could reducing loan sizes improve portfolio quality without significantly reducing lending volume?
-
+- What borrower characteristics most strongly drive loan default risk?
+- How much loan exposure is concentrated in high-risk segments?
+- What is the impact of reducing loan sizes for risky borrower groups?
+- What is the impact of selectively rejecting high-risk borrowers?
+- Which policy provides the best trade-off between portfolio profitability, risk reduction, and lending volume?
 
 ---
 
@@ -157,6 +161,12 @@ Although the predictive model improves borrower selection, an additional busines
 > **Can portfolio losses be reduced further by adjusting loan amounts for high-risk borrowers rather than only changing approval decisions?**
 
 Before testing alternative lending policies, the portfolio structure was analyzed to determine which borrower characteristics drive default risk.
+
+---
+
+## Credit Risk Strategies (Loan Sizing & Rejection Policies)
+
+---
 
 ### Loan Term Analysis
 
