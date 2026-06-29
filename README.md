@@ -1,5 +1,9 @@
 # Credit Risk Portfolio Optimization & Policy Simulation
 
+## Technologies
+
+**Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Jupyter Notebook**
+
 ## Project Goal
 
 To analyze key factors influencing loan default risk and build a predictive model to identify high-risk borrowers, and to evaluate alternative credit risk management policies to improve portfolio performance.
