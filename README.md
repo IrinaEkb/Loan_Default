@@ -4,6 +4,67 @@
 
 **Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Jupyter Notebook**
 
+## Project Structure
+
+```text
+Loan_Default/
+├── data
+│   ├── models
+│   │   └── logistic_regression.pkl
+│   ├── processed
+│   │   └── loan_clean.csv
+│   └── raw
+│       └── Loan_default.csv
+│
+├── downloads
+│   ├── data_info.txt
+│   └── data_schema.csv
+│
+├── notebooks
+│   ├── 01_data_audit.ipynb
+│   ├── 02_eda.ipynb
+│   ├── 03_model_preparation.ipynb
+│   ├── 04_loan_size_strategy.ipynb
+│   └── 05_rejection_policy.ipynb
+│
+├── reports
+│   ├── 01_data_quality_report.md
+│   ├── 02_eda_report.md
+│   ├── 03_model_preparation_report.md
+│   ├── 04_loan_size_strategy_report.md
+│   └── 05_rejection_policy_report.md
+│
+├── src
+│
+├── visuals
+│   ├── confusion_matrix.png
+│   ├── correlation_heatmap.png
+│   ├── credit_score_distribution.png
+│   ├── default_distribution.png
+│   ├── default_rate_before_after.png
+│   ├── default_rate_by_loan_purpose.png
+│   ├── default_rate_credit_score.png
+│   ├── default_rate_income.png
+│   ├── education_credit_score.png
+│   ├── employment_risk.png
+│   ├── income_loan_by_default.png
+│   ├── income_segment_default_rate.png
+│   ├── income_segment_risk.png
+│   ├── loan_amount_summary.png
+│   ├── loan_policy_impact_comparison.png
+│   ├── loan_purpose_distribution.png
+│   ├── loan_volume_by_purpose.png
+│   ├── marital_status_default_rate.png
+│   ├── portfolio_impact.png
+│   ├── portfolio_policy_impact.png
+│   ├── portfolio_stress_test.png
+│   ├── profit_threshold.png
+│   ├── rejection_policy.png
+│   └── top_risk_factors.png
+│
+└── README.md
+```
+
 ## Project Goal
 
 To analyze key factors influencing loan default risk and build a predictive model to identify high-risk borrowers, and to evaluate alternative credit risk management policies to improve portfolio performance.
