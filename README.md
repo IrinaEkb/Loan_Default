@@ -4,6 +4,8 @@
 
 **Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Jupyter Notebook**
 
+---
+
 ## Project Structure
 
 ```text
